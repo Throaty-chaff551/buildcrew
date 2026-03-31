@@ -1,6 +1,6 @@
 # BuildCrew
 
-[English](README.md) | [简体中文](README_zh-CN.md)
+[English](README.md) | [简体中文](README_zh-CN.md) | [日本語](README_ja.md)
 
 **Build your AI crew. Run your AI company.**
 
@@ -8,7 +8,7 @@ BuildCrew is an open-source platform that organizes multiple AI agents into a vi
 
 > If AI agents are employees, BuildCrew is the company they work in.
 
-![BuildCrew Dashboard](docs/images/overview.png)
+![BuildCrew Dashboard](docs/images/overview-en.png)
 
 ---
 
@@ -24,7 +24,7 @@ Create Company  →  Chat with Aria  →  Launch Plan  →  Execute  →  Dashbo
 4. **Execute** — One click. Aria hires agents, creates goals, assigns tasks
 5. **Dashboard** — Watch your AI company work: org chart, tasks, progress
 
-![Chat with Aria](docs/images/onboarding.png)
+![Chat with Aria](docs/images/onboarding-en.png)
 
 ## Features
 

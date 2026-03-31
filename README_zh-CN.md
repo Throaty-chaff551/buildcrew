@@ -1,6 +1,6 @@
 # BuildCrew
 
-[English](README.md) | [简体中文](README_zh-CN.md)
+[English](README.md) | [简体中文](README_zh-CN.md) | [日本語](README_ja.md)
 
 **构建你的 AI 团队，运行你的 AI 公司。**
 
@@ -8,7 +8,7 @@ BuildCrew 是一个开源的 AI 多智能体编排平台。通过和 AI CEO（Ar
 
 > 如果 AI 是员工，BuildCrew 就是他们工作的公司。
 
-![BuildCrew 总览页](docs/images/overview.png)
+![BuildCrew 总览页](docs/images/overview-zh.png)
 
 ---
 
@@ -24,7 +24,7 @@ BuildCrew 是一个开源的 AI 多智能体编排平台。通过和 AI CEO（Ar
 4. **立即执行** — 一键执行。Aria 招聘团队、创建目标、分配任务
 5. **总览页** — 查看 AI 公司运转：组织架构、任务进度、目标达成
 
-![和 Aria 对话](docs/images/onboarding.png)
+![和 Aria 对话](docs/images/onboarding-zh.png)
 
 ## 功能特性
 
