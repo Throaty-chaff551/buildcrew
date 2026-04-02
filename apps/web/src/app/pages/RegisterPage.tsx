@@ -16,8 +16,9 @@ export function RegisterPage() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [justRegistered, setJustRegistered] = useState(false);
 
-  if (isAuthenticated) {
+  if (isAuthenticated && !justRegistered) {
     return <Navigate to="/overview" replace />;
   }
 
@@ -39,6 +40,7 @@ export function RegisterPage() {
         setError(t(errorKey, t('auth.registerFailed', 'Registration failed')));
         return;
       }
+      setJustRegistered(true);
       login(
         body.data.accessToken || body.data.token,
         body.data.user || { id: 'u1', name: name || email.split('@')[0] || 'User', email },

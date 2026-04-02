@@ -28,12 +28,12 @@ export class OverviewPage {
   }
 
   async getAgentCount(): Promise<number> {
-    const text = await this.agentCountCard.locator('.text-3xl').textContent();
+    const text = await this.agentCountCard.getByTestId('stat-value').textContent();
     return parseInt(text ?? '0', 10);
   }
 
   async getTaskCount(): Promise<number> {
-    const text = await this.taskCountCard.locator('.text-3xl').textContent();
+    const text = await this.taskCountCard.getByTestId('stat-value').textContent();
     return parseInt(text ?? '0', 10);
   }
 }

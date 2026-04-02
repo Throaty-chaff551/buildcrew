@@ -39,7 +39,7 @@ export function StatCard({
             <span className="text-sm text-primary font-medium">{label}</span>
           </div>
           <div className="space-y-1">
-            <div className="text-3xl font-bold text-foreground">{value}</div>
+            <div className="text-3xl font-bold text-foreground" data-testid="stat-value">{value}</div>
             {subtitle && (
               <div className="text-sm text-primary">{subtitle}</div>
             )}
